@@ -6,7 +6,7 @@
 
 > 微信Python-Sdk
 
-    from WXinterface import WxClient
+    from WxInterface import WxClient
 
 token 2个小时过期，为避免频繁取，生成本地文件存储token。
 
