@@ -48,7 +48,7 @@ class Wxinterface(object):
     def get(self, method, post={}, again=False):
         try:
             string = urllib.urlencode({"access_token":self.access_token})
-            api = "https://api.weixin.qq.com/cgi-bin%s?%s" % (method, string)
+            api = "%s%s?%s" % (self.api, method, string)
             if post:
                 data = urllib.urlencode(post)
                 req = urllib2.Request(api, data)
